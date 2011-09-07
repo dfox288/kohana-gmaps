@@ -78,6 +78,7 @@ gmaps_instance_<?php echo $options['instance']; ?>.initialize = function() {
 			map: map,
 			title: "<?php echo $mark['options']['title']; ?>",
 			<?php echo (isset($mark['options']['icon'])) ? 'icon: "'.$mark['options']['icon'].'",' : ''; ?>
+			<?php echo (isset($mark['options']['shadow'])) ? 'shadow: "'.$mark['options']['shadow'].'",' : ''; ?>
 		});
 
 		<?php if (isset($mark['options']['content'])): ?>
@@ -98,4 +99,4 @@ window.onload = (function(){
 	<?php endforeach; ?>
 });
 </script>
-<div id="gmap_<?php echo $options['instance']; ?>" style="width:<?php echo $options['gmap_size_x']; ?>; height:<?php echo $options['gmap_size_y']; ?>"></div>
+<div id="gmap_<?php echo $options['instance']; ?>" class="<?php echo $options['class']; ?>" style="width:<?php echo $options['gmap_size_x']; ?>; height:<?php echo $options['gmap_size_y']; ?>"></div>
