@@ -1,0 +1,8 @@
+{
+	"minimum-stability": "dev",
+    "name": "external/gmaps",
+    "type": "kohana-module",
+    "description": "A Kohana module for integrating google maps easily to your website",
+    "keywords": ["kohana", "google maps"],
+    "homepage": "https://github.com/dfox288/kohana-gmaps"
+}
